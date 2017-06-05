@@ -1,4 +1,3 @@
-
 int val = 0;
 int indi = 0;
 int j = 5;
@@ -10,7 +9,7 @@ void setup(){
       pinMode(1, OUTPUT);
   }
   
-  pinMode(9, OUTPUT);
+  pinMode(7, OUTPUT);
 }
 
 
@@ -35,7 +34,7 @@ void loop(){
   
   if (indi = 0)
   {
-       digitalWrite(8, HIGH); // Green light indicator: 
+       digitalWrite(7, HIGH); // Green light indicator: 
   }
   
 }
