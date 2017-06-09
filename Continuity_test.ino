@@ -1,6 +1,7 @@
 int val = 0;
-int indi = 0;
 int j = 5;
+
+boolean indicator = false;
 
 
 void setup(){
@@ -21,7 +22,7 @@ void loop(){
       if( val > 6 )
       {
            digitalWrite(j,HIGH); // Red light indicator
-           indi = 1;
+           indicator = !indicator;
            j--;
       }
       else
@@ -32,7 +33,7 @@ void loop(){
   }
   
   
-  if (indi == 0)
+  if (indicator == false)
   {
        digitalWrite(7, HIGH); // Green light indicator: 
   }
